@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=cagepa_db'
+      - 'POSTGRES_PASSWORD=cagepa'
+      - 'POSTGRES_USER=cagepa'
+    ports:
+      - '5432:5432'
